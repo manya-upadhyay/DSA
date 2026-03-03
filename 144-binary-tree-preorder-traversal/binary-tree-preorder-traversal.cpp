@@ -18,10 +18,10 @@ public:
     }
 
 private:
-    void preorder(TreeNode* node, vector<int>&res){
+    void preorder(TreeNode* node, vector<int>&result){
         if(!node) return;
-        res.push_back(node->val);
-        preorder(node->left,res);
-        preorder(node->right, res);
+        result.push_back(node->val);
+        preorder(node->left,result);
+        preorder(node->right, result);
     }
 };
